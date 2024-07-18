@@ -1,8 +1,8 @@
+# final.py
+
 import pandas as pd
 import sys
-from notaventa import nv
-from categorias import categorias
-
+from funciones import *
 
 def asignacion():
     print("Asegúrese de que el archivo que intenta utilizar se encuentre en la misma dirección que el Script.")
@@ -20,13 +20,14 @@ def asignacion():
     -Opcion 1: Asignar Nota de Venta.
     -Opcion 2: Categorizar.
     """)
-    opcion = int(input("Elija una opcion: "))
-    if opcion==1:
+    opcion = int(input("Elija una opción: "))
+    if opcion == 1:
         nv(df)
-    elif opcion==2:
+    elif opcion == 2:
         categorias(df)
     else:
-        print("Error")
+        print("Error: Opción no válida.")
         sys.exit()
+
 if __name__ == "__main__":
     asignacion()
