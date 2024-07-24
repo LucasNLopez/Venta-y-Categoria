@@ -2,7 +2,8 @@
 
 import pandas as pd
 import sys
-from funciones import *
+from funciones_test import *
+#from funciones import *
 
 def asignacion():
     print("Asegúrese de que el archivo que intenta utilizar se encuentre en la misma dirección que el Script.")
@@ -25,6 +26,7 @@ def asignacion():
         nv(df)
     elif opcion == 2:
         categorias(df)
+        filtro_6cortes(df)
     else:
         print("Error: Opción no válida.")
         sys.exit()
